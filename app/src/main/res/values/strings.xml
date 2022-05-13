@@ -1,7 +1,8 @@
 <resources>
     <string name="app_name">Stant Filmes</string>
     <string name="date">Data de Lançamento: %1$s</string>
-    <string name="language">Idioma: %1$s</string>
+    <string name="language">Idioma de Origem: %1$s</string>
+    <string name="genre">Gênero: %1$s</string>
 
 
 </resources>

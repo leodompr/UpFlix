@@ -4,6 +4,6 @@ import com.leonardo.desafiostant.interfacesRetro.RetrofitService
 
 
 class MainRepository(private val retrofitService: RetrofitService,) {
-    fun getAllMovie1(page: Int) = retrofitService.getAllMovies(page = page)
-   fun getAllGenr2() = retrofitService.getAllGenres()
+    fun getAllMovie1(page: Int) = retrofitService.getAllMovies(page = page) //MoviesResponse
+   fun getAllGenr2() = retrofitService.getAllGenres() //GenresResponse
 }
