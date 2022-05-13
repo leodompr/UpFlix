@@ -2,9 +2,10 @@
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="wrap_content"
     android:layout_height="wrap_content"
+
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    tools:showIn="@layout/category_item"
+    android:background="@color/colorPrimary"
     >
 
 
@@ -12,17 +13,60 @@
         android:id="@+id/image_view_cover"
         android:layout_width="0dp"
         android:layout_height="200dp"
+        android:layout_marginStart="6dp"
+        android:padding="10dp"
+        android:layout_marginEnd="6dp"
         android:scaleType="centerCrop"
-        android:layout_marginStart="4dp"
-        android:layout_marginEnd="4dp"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintDimensionRatio="w, 3:4"
+        app:layout_constraintDimensionRatio="w,3:4"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-
         app:layout_constraintTop_toTopOf="parent"
         tools:src="@drawable/a_menina_que_roubava_livros_capa_filme_1" />
 
+    <TextView
+        android:id="@+id/name_movie_item"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="5dp"
+        android:background="@drawable/screen_background_dark_transparent"
+        android:ellipsize="end"
+        android:maxLines="1"
+        android:padding="2dp"
+        android:paddingStart="6dp"
+        android:text="A Bela e a Fera"
+        android:textColor="@color/white"
+        android:textSize="12sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/text_view_date_category_item"
+        app:layout_constraintStart_toStartOf="@+id/image_view_cover" />
+
+    <TextView
+        android:id="@+id/text_view_title_category_item"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="5dp"
+        android:background="@drawable/screen_background_red_transparent"
+        android:padding="2dp"
+        android:text="Aventura"
+        android:textColor="@color/white"
+        app:layout_constraintStart_toStartOf="@+id/image_view_cover"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/text_view_date_category_item"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:background="@drawable/screen_background_dark_transparent"
+        android:paddingStart="6dp"
+        android:paddingEnd="2dp"
+        android:text="2022"
+        android:textColor="@color/white"
+        android:textSize="10sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/name_movie_item" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

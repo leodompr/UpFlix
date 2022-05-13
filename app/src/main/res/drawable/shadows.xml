@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:id="@+id/cover_drawble" android:drawable="@drawable/backteste"/>
+
+    <item android:id="@+id/gradient_drawbçw">
+        <shape>
+            <gradient
+                android:angle="90"
+                android:centerColor="#696969"
+                android:endColor="#EF000000"
+                android:startColor="#EF000000"
+                />
+
+
+        </shape>
+
+
+    </item>
+
+</layer-list>
