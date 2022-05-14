@@ -17,7 +17,7 @@ class MianViewModel(private val repository: MainRepository) : ViewModel() {
 
     fun getAllMovies(page: Int) {
 
-        val requestt = repository.getAllMovie1(page)
+        val requestt = repository.getAllMovies(page)
         requestt.enqueue(object : Callback<MovieResponse> {
             override fun onResponse(call: Call<MovieResponse>, response: Response<MovieResponse>) {
                 //Quando houver resposta
@@ -35,7 +35,7 @@ class MianViewModel(private val repository: MainRepository) : ViewModel() {
 
         fun getAllGenre(){
 
-            val request5 = repository.getAllGenr2()
+            val request5 = repository.getAllGenres()
             request5.enqueue(object : Callback<GenreResponse>{
                 override fun onResponse(call: Call<GenreResponse>, response: Response<GenreResponse>) {
                     genreList.postValue(response.body())

@@ -11,36 +11,12 @@
     <androidx.appcompat.widget.Toolbar
         android:id="@+id/toolbarMain"
         android:layout_width="0dp"
-
         android:layout_height="wrap_content"
         android:background="@color/colorPrimary"
         android:minHeight="?attr/actionBarSize"
         android:theme="?attr/actionBarTheme"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
-
-    <androidx.recyclerview.widget.RecyclerView
-        android:id="@+id/recycler_vie_movie_list"
-        android:layout_width="0dp"
-        android:layout_height="0dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/searchView"
-        tools:listitem="@layout/mov_item" />
-
-    <ProgressBar
-        android:id="@+id/progressBar"
-        style="?android:attr/progressBarStyle"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:indeterminateTint="@color/white"
-        app:layout_constraintBottom_toBottomOf="@+id/recycler_vie_movie_list"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="@+id/recycler_vie_movie_list"
         app:layout_constraintTop_toTopOf="parent" />
 
     <ImageButton
@@ -65,23 +41,92 @@
         app:layout_constraintTop_toTopOf="@+id/toolbarMain"
         app:srcCompat="@drawable/ic_busca" />
 
-     <EditText
-        android:id="@+id/searchView"
-        android:layout_width="0dp"
-        android:layout_height="40dp"
-        android:layout_marginStart="2dp"
-        android:layout_marginTop="1dp"
-        android:visibility="gone"
-        android:textColor="@color/white"
-        android:backgroundTint="@color/colorPrimaryDark"
-        android:layout_marginEnd="2dp"
-        android:hint="Digite aqui"
-        android:textStyle="normal"
-        android:paddingStart="10dp"
-        android:textColorHint="@color/colorGrayLight"
+
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/toolbarMain" />
+        app:layout_constraintTop_toBottomOf="@+id/toolbarMain">
 
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+            <TextView
+                android:id="@+id/todos_filmes"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:text="Todos os filmes"
+                android:textColor="@color/white"
+                android:textAllCaps="true"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/recyclerViewCategory" />
+
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/recycler_vie_movie_list"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="1.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/todos_filmes"
+                app:layout_constraintVertical_bias="0.0"
+                tools:listitem="@layout/mov_item" />
+
+            <ProgressBar
+            android:id="@+id/progressBar"
+            style="?android:attr/progressBarStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:indeterminateTint="@color/white"
+            app:layout_constraintBottom_toBottomOf="@+id/recycler_vie_movie_list"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="@+id/recycler_vie_movie_list"
+            app:layout_constraintTop_toTopOf="parent" />
+
+
+            <EditText
+                android:id="@+id/searchView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:backgroundTint="@color/colorPrimaryDark"
+                android:hint="Digite aqui"
+                android:paddingStart="10dp"
+                android:textColor="@color/white"
+                android:textColorHint="@color/colorGrayLight"
+                android:textStyle="normal"
+                android:visibility="gone"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:visibility="visible" />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/recyclerViewCategory"
+                android:layout_width="0dp"
+                android:layout_height="140dp"
+                android:background="@android:color/transparent"
+                android:visibility="gone"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/searchView"
+                tools:visibility="invisible" />
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </ScrollView>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

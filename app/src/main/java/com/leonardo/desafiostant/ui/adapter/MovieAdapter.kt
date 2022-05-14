@@ -1,6 +1,5 @@
 package com.leonardo.desafiostant.ui.adapter
 
-import android.annotation.SuppressLint
 import android.content.Context
 import android.view.LayoutInflater
 import android.view.View
@@ -18,29 +17,31 @@ import com.leonardo.desafiostant.model.Movie
 import jp.wasabeef.glide.transformations.*
 import jp.wasabeef.glide.transformations.gpu.VignetteFilterTransformation
 
-class MovieAdapter(private val onItemClick : (Movie) -> Unit) : RecyclerView.Adapter<MovieAdapter.ViewHolder>() { //Adapter MainActivity
+class MovieAdapter(private val onItemClick : (Movie) -> Unit) : RecyclerView.Adapter<MovieAdapter.ViewHolder>() {
+    private lateinit var context : Context
     private var movies : List<Movie> = listOf()
     private var genre : List<Genre> = listOf()
 
-    fun setDataSet(movies: List<Movie>){ //Alimenta a RecyclerView com os Filmes
+
+    fun setDataSet(movies: List<Movie>){
         this.movies = movies
     }
 
-    fun setDataGenre(genre: List<Genre>){  //Lista de Generos para a fun linkItem
+    fun setDataGenre(genre: List<Genre>){
         this.genre = genre
     }
 
-    fun filterList(movieSearch: MutableList<Movie>) { //Filtro de Busca na Lista
+    fun filterList(movieSearch: MutableList<Movie>) {
         this.movies = movieSearch
         notifyDataSetChanged()
     }
 
+
     class ViewHolder(view: View) : RecyclerView.ViewHolder(view) {
 
-        @SuppressLint("SetTextI18n")
         fun linkItem(movie: Movie, onItemClick: (Movie) -> Unit, genre: List<Genre>) {
 
-            itemView.setOnClickListener { //Captura os eventos de click
+            itemView.setOnClickListener {
                 onItemClick(movie)
             }
 
@@ -49,16 +50,20 @@ class MovieAdapter(private val onItemClick : (Movie) -> Unit) : RecyclerView.Ada
 
             val categoryMovie : TextView = itemView.findViewById(R.id.text_view_title_category_item)
 
+
             for (g in genre){
                 if (movie.genre_ids!!.contains(g.id)){
                     categoryMovie.text = g.name
                 }
+
             }
+
 
             val dataApi = movie.release_date
 
             val dateMovie : TextView = itemView.findViewById(R.id.text_view_date_category_item)
             dateMovie.text = "${dataApi.substring(8,10)}/${dataApi.substring(5, 7)}/${dataApi.substring(0, 4)}"
+
 
            val imgCover =  itemView.findViewById<ImageView>(R.id.image_view_cover)
             Glide.with(imgCover)
@@ -80,6 +85,7 @@ class MovieAdapter(private val onItemClick : (Movie) -> Unit) : RecyclerView.Ada
     override fun onBindViewHolder(holder: ViewHolder, position: Int) {
         val movie = movies[position]
         holder.linkItem(movie, onItemClick, genre)
+
 
     }
 
