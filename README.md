@@ -38,6 +38,7 @@ StantFlix app built with Kotlin
 ## Development Roadmap
 
 - [x] [Kotlin](https://kotlinlang.org/)
+- [x] [Architecture MVVM]
 - [x] [LiveData](https://developer.android.com/topic/libraries/architecture/livedata)
 - [x] [ViewModel](https://developer.android.com/topic/libraries/architecture/viewmodel)
 - [x] [Coroutines](https://developer.android.com/topic/libraries/architecture/coroutines)
