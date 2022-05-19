@@ -18,7 +18,6 @@ StantFlix app built with Kotlin
   
 <img src="https://user-images.githubusercontent.com/94938103/169182458-ffa009f6-571f-4b93-8098-6448fb4533a7.png" width="250" >
  
-  
 <img src="https://user-images.githubusercontent.com/94938103/169182469-c24797e8-39eb-4969-961b-7265928541ec.png" width="250"> 
   
 <img src="https://user-images.githubusercontent.com/94938103/169182484-08214d94-75a1-4081-add3-fb0670612013.png" width="250">   
