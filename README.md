@@ -5,13 +5,8 @@
 StantFlix app built with Kotlin
 </h2>
 
-<p align="center">
-  <a href="https://developer.android.com/kotlin">
-    <img src="https://kotlin.link/awesome-kotlin.svg" alt="Awesome Kotlin">
-  </a>
+
   
-
-
 ## Screenshots
 
 <p align="center">
@@ -36,11 +31,12 @@ StantFlix app built with Kotlin
 ## Development Roadmap
 
 - [x] [Kotlin](https://kotlinlang.org/)
-- [x] [Architecture MVVM]
+- [x] Architecture MVVM
 - [x] [LiveData](https://developer.android.com/topic/libraries/architecture/livedata)
 - [x] [ViewModel](https://developer.android.com/topic/libraries/architecture/viewmodel)
 - [x] [Coroutines](https://developer.android.com/topic/libraries/architecture/coroutines)
 - [x] [Retrofit](https://square.github.io/retrofit/)
+- [x] [TheMovieDB] (https://developers.themoviedb.org/3/getting-started/introduction)
 
 
 ## Features
