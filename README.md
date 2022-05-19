@@ -1,6 +1,7 @@
 <h2 align="center">
 
-![logo_app_bar](https://user-images.githubusercontent.com/94938103/169182300-94428503-0c84-4ed2-9c14-d1c459413ae8.png)
+<img src="https://user-images.githubusercontent.com/94938103/169182300-94428503-0c84-4ed2-9c14-d1c459413ae8.png" width="300" >
+
 
 StantFlix app built with Kotlin
 </h2>
@@ -36,7 +37,7 @@ StantFlix app built with Kotlin
 - [x] [ViewModel](https://developer.android.com/topic/libraries/architecture/viewmodel)
 - [x] [Coroutines](https://developer.android.com/topic/libraries/architecture/coroutines)
 - [x] [Retrofit](https://square.github.io/retrofit/)
-- [x] [TheMovieDB] (https://developers.themoviedb.org/3/getting-started/introduction)
+- [x] [TheMovieDB](https://developers.themoviedb.org/3/getting-started/introduction)
 
 
 ## Features
