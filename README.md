@@ -16,19 +16,19 @@ StantFlix app built with Kotlin
 
 <p align="center">
   
-<img src="https://user-images.githubusercontent.com/94938103/169182458-ffa009f6-571f-4b93-8098-6448fb4533a7.png" width="200" height="400">
+<img src="https://user-images.githubusercontent.com/94938103/169182458-ffa009f6-571f-4b93-8098-6448fb4533a7.png" width="250" >
  
- <img src="https://user-images.githubusercontent.com/94938103/169182469-c24797e8-39eb-4969-961b-7265928541ec.png" width="200" height="400"> 
+ <img src="https://user-images.githubusercontent.com/94938103/169182469-c24797e8-39eb-4969-961b-7265928541ec.png" width="250"> 
   
-<img src="https://user-images.githubusercontent.com/94938103/169182469-c24797e8-39eb-4969-961b-7265928541ec.png" width="200" height="400"> 
+<img src="https://user-images.githubusercontent.com/94938103/169182469-c24797e8-39eb-4969-961b-7265928541ec.png" width="250"> 
   
-<img src="https://user-images.githubusercontent.com/94938103/169182484-08214d94-75a1-4081-add3-fb0670612013.png" width="200" height="400">   
+<img src="https://user-images.githubusercontent.com/94938103/169182484-08214d94-75a1-4081-add3-fb0670612013.png" width="250">   
  
-<img src="https://user-images.githubusercontent.com/94938103/169182488-f075880a-8bd3-40bf-aab7-67892b47d2c7.png" width="200" height="400">     
+<img src="https://user-images.githubusercontent.com/94938103/169182488-f075880a-8bd3-40bf-aab7-67892b47d2c7.png" width="250">     
 
-<img src="https://user-images.githubusercontent.com/94938103/169182506-be9a05eb-4f1c-4459-b102-e3966fe72c86.png" width="200" height="400">     
+<img src="https://user-images.githubusercontent.com/94938103/169182506-be9a05eb-4f1c-4459-b102-e3966fe72c86.png" width="250">     
   
-<img src="https://user-images.githubusercontent.com/94938103/169185129-12fb73d4-827c-4506-8658-3e323c501838.gif" width="220" height="400">       
+<img src="https://user-images.githubusercontent.com/94938103/169185129-12fb73d4-827c-4506-8658-3e323c501838.gif" width="250" >       
   
 
 </p>
