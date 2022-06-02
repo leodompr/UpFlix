@@ -1,9 +1,10 @@
 <h2 align="center">
 
-<img src="https://user-images.githubusercontent.com/94938103/169182300-94428503-0c84-4ed2-9c14-d1c459413ae8.png" width="300" >
+<img src="https://user-images.githubusercontent.com/94938103/171727586-acc1a13e-8b77-466b-bb33-14f9264eecc6.svg" width="300" >
 
 
-StantFlix app built with Kotlin
+
+UpFlix app built with Kotlin
 </h2>
 
 
