@@ -1,8 +1,10 @@
 <resources>
-    <string name="app_name">StantFlix</string>
+    <string name="app_name">UpFlix</string>
     <string name="date">Data de Lançamento: %1$s</string>
     <string name="language">Idioma de Origem: %1$s</string>
     <string name="genre">Gênero: %1$s</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
 
 
 </resources>
