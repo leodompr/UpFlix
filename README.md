@@ -25,7 +25,7 @@ UpFlix app built with Kotlin
 
 <img src="https://user-images.githubusercontent.com/94938103/171726463-c7c982e1-0619-4b6b-b028-6577dd97d2f6.png" width="250">     
   
-<img src="https://user-images.githubusercontent.com/94938103/169185129-12fb73d4-827c-4506-8658-3e323c501838.gif" width="250" >       
+ 
   
 
 </p>
