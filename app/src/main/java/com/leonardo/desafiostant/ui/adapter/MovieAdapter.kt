@@ -68,7 +68,6 @@ class MovieAdapter(private val onItemClick : (Movie) -> Unit) : RecyclerView.Ada
            val imgCover =  itemView.findViewById<ImageView>(R.id.image_view_cover)
             Glide.with(imgCover)
                 .load("https://image.tmdb.org/t/p/w500/" + movie.poster_path)
-
                 .diskCacheStrategy(DiskCacheStrategy.ALL)
                 .fallback(R.drawable.ic_broken)
                 .into(imgCover)

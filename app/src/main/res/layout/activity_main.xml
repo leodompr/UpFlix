@@ -28,7 +28,7 @@
         app:layout_constraintBottom_toBottomOf="@+id/toolbarMain"
         app:layout_constraintStart_toStartOf="@+id/toolbarMain"
         app:layout_constraintTop_toTopOf="@+id/toolbarMain"
-        app:srcCompat="@drawable/logo_app_bar" />
+        app:srcCompat="@drawable/frame_logo_app48" />
 
     <ImageButton
         android:id="@+id/btnSearch"
